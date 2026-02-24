@@ -1,7 +1,7 @@
 <template>
   <div class="bg-[#3a3a3a] text-white w-full h-full relative flex flex-col items-center justify-center overflow-hidden">
     <div class="flex items-center mb-8">
-      <img src="/logo.png" class="h-12 mr-4 object-contain" alt="logo" />
+      <img src="./logo.png" class="h-12 mr-4 object-contain" alt="logo" />
       <h1 class="text-[#e5c07b] text-3xl font-bold tracking-widest">目录</h1>
     </div>
 

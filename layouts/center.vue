@@ -7,7 +7,7 @@
     <div class="flex items-center mb-6">
       <span class="text-[#8ae28a] text-3xl font-bold mr-3">></span>
       <h1 class="text-[#e5c07b] text-3xl font-bold tracking-wider"><slot name="header" /></h1>
-      <img src="/logo.png" class="absolute right-10 top-10 h-8 object-contain" alt="logo" />
+      <img src="./logo.png" class="absolute right-10 top-10 h-8 object-contain" alt="logo" />
     </div>
     
     <!-- 居中内容区域 -->
@@ -129,5 +129,15 @@
 .center-content :deep(a) {
   color: #61afee;
   text-decoration: none;
+}
+
+/* 隐藏代码块滚动条 */
+.center-content :deep(pre)::-webkit-scrollbar {
+  display: none;
+}
+
+.center-content :deep(pre) {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 </style>

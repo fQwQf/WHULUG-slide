@@ -3,7 +3,7 @@
     
     <div class="absolute top-10 left-0 flex items-center">
        <div class="bg-[#e65176] w-8 h-10 mr-6" style="clip-path: polygon(0 0, 100% 0, 60% 100%, 0 100%);"></div>
-       <img src="/logo.png" class="h-10 object-contain" alt="logo" />
+       <img src="./logo.png" class="h-10 object-contain" alt="logo" />
     </div>
     
     <div class="section-content grid w-full mb-8 items-center" style="grid-template-columns: 1fr auto auto 1fr; gap: 2rem;">

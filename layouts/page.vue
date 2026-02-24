@@ -7,11 +7,11 @@
     <div class="flex items-center mb-6">
       <span class="text-[#8ae28a] text-3xl font-bold mr-3">></span>
       <h1 class="text-[#e5c07b] text-3xl font-bold tracking-wider"><slot name="header" /></h1>
-      <img src="/logo.png" class="absolute right-10 top-10 h-8 object-contain" alt="logo" />
+      <img src="./logo.png" class="absolute right-10 top-10 h-8 object-contain" alt="logo" />
     </div>
     
     <!-- 内容区域 -->
-    <div class="content-area flex-1 px-8 overflow-y-auto">
+    <div class="content-area flex-1 px-8 overflow-y-auto scrollbar-hide">
       <slot />
     </div>
     
@@ -159,5 +159,25 @@
   border: none;
   border-top: 1px solid #4a4a4a;
   margin: 2rem 0;
+}
+
+/* 隐藏滚动条 */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* 代码块隐藏滚动条但保持滚动 */
+.content-area :deep(pre)::-webkit-scrollbar {
+  display: none;
+}
+
+.content-area :deep(pre) {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 </style>

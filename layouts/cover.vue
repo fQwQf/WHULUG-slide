@@ -2,7 +2,7 @@
 defineProps({
   background: {
     type: String,
-    default: 'logo2.png'
+    default: './node_modules/slidev-theme-whulug/public/logo2.png'
   }
 })
 </script>
@@ -17,7 +17,7 @@ defineProps({
     <div class="absolute inset-0 bg-[#3a3a3a]" style="clip-path: polygon(50% 0, 100% 0, 100% 100%, 30% 100%);"></div>
     
     <div class="absolute top-8 right-10">
-      <img src="/logo2.png" class="h-16 object-contain opacity-90" alt="logo" />
+      <img src="./logo2.png" class="h-16 object-contain opacity-90" alt="logo" />
     </div>
 
     <div class="absolute top-1/3 right-0 w-[60%] flex flex-col justify-center">

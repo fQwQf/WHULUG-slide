@@ -7,21 +7,21 @@
     <div class="flex items-center mb-5">
       <span class="text-[#8ae28a] text-3xl font-bold mr-3">></span>
       <h1 class="text-[#e5c07b] text-3xl font-bold tracking-wider"><slot name="header" /></h1>
-      <img src="/logo.png" class="absolute right-10 top-10 h-8 object-contain" alt="logo" />
+      <img src="./logo.png" class="absolute right-10 top-10 h-8 object-contain" alt="logo" />
     </div>
     
     <!-- 两列内容区域 -->
     <div class="content-wrapper flex-1 flex px-6 overflow-hidden">
       <!-- 左列 -->
-      <div class="left-col flex-1 pr-6 overflow-y-auto">
+      <div class="left-col flex-1 pr-6 overflow-y-auto scrollbar-hide">
         <slot name="left" />
       </div>
-      
+
       <!-- 分隔线 -->
       <div class="divider w-px bg-[#4a4a4a] opacity-50"></div>
-      
+
       <!-- 右列 -->
-      <div class="right-col flex-1 pl-6 overflow-y-auto">
+      <div class="right-col flex-1 pl-6 overflow-y-auto scrollbar-hide">
         <slot name="right" />
       </div>
     </div>
@@ -168,20 +168,25 @@
   min-height: 100%;
 }
 
-/* 滚动条样式 */
-.left-col::-webkit-scrollbar,
-.right-col::-webkit-scrollbar {
-  width: 6px;
+/* 隐藏滚动条 */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.left-col::-webkit-scrollbar-thumb,
-.right-col::-webkit-scrollbar-thumb {
-  background: #4a4a4a;
-  border-radius: 3px;
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
 
-.left-col::-webkit-scrollbar-thumb:hover,
-.right-col::-webkit-scrollbar-thumb:hover {
-  background: #61afee;
+/* 代码块隐藏滚动条 */
+.left-col :deep(pre)::-webkit-scrollbar,
+.right-col :deep(pre)::-webkit-scrollbar {
+  display: none;
+}
+
+.left-col :deep(pre),
+.right-col :deep(pre) {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 </style>
