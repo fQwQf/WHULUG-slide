@@ -6,7 +6,7 @@
     <div class="text-lg leading-loose text-center opacity-90">
       <slot />
     </div>
-    <!-- 注入状态栏 (警告色) -->
+
     <BottomBar mode="DISCLAIMER" modeClass="bg-[#f17a94] text-[#222]" dateClass="bg-[#f17a94] text-[#222]" />
   </div>
 </template>

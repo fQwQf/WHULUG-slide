@@ -1,12 +1,15 @@
 ---
 theme: default
-# 必须在这里声明首页的 layout
 layout: cover
 canvasWidth: 980
-# 引入思源黑体和 Fira Code，Slidev 会自动下载
 fonts:
   sans: 'Noto Sans SC'
   mono: 'Fira Code'
+# 设置封面背景图片
+background: logo2.png
+# section 页面 PART 字母映射偏移量
+# offset=1: 01->A, 02->B (默认)
+# offset=0: 00->A, 01->B
 ---
 
 # 滚滚长江东逝水
@@ -32,58 +35,88 @@ layout: disclaimer
 
 ---
 layout: toc
+start: 1
 ---
 
-<div class="flex flex-col items-center mb-10">
-  <div class="flex items-center text-4xl mb-4 font-bold">
-    <span class="text-[#e65176] mr-4">></span> 
-    <span class="text-[#5da0d8] font-mono">01</span>
-  </div>
-  <span class="text-white text-4xl tracking-widest">滚滚长江东逝水</span>
-</div>
-
-<div class="flex flex-col items-center mb-10">
-  <div class="flex items-center text-4xl mb-4 font-bold">
-    <span class="text-[#e65176] mr-4">></span> 
-    <span class="text-[#5da0d8] font-mono">02</span>
-  </div>
-  <span class="text-white text-4xl tracking-widest">浪花淘尽英雄</span>
-</div>
-
-<div class="flex flex-col items-center">
-  <div class="flex items-center text-4xl mb-4 font-bold">
-    <span class="text-[#e65176] mr-4">></span> 
-    <span class="text-[#5da0d8] font-mono">03</span>
-  </div>
-  <span class="text-white text-4xl tracking-widest">是非成败转头空</span>
-</div>
+- 滚滚长江东逝水
+- 浪花淘尽英雄
+- 是非成败转头空
+- 青山依旧在
+- 几度夕阳红
+- 白发渔樵江渚上
+- 惯看秋月春风
+- 一壶浊酒喜相逢
+- 古今多少事
+- 都付笑谈中
 
 ---
 layout: page
 ---
 
-这里是具体的正文内容。你可以正常使用 Markdown 语法：
-* 第一点
-* 第二点
+![WHULUG](./WHULUG.png)
+
+滚滚长江东逝水
+* 浪花淘尽英雄
+* 是非成败转头空
 
 :: header ::
-滚滚长江东逝水
+正文内容示例
 
 ---
 layout: section
+number: '01'
 ---
 
-:: number ::
-01
+# 滚滚长江东逝水
 
-:: title ::
-滚滚长江东逝水
+---
+layout: center
+---
 
-:: subtitle ::
-PART ONE
+# 滚滚长江东逝水
+
+## 浪花淘尽英雄
+
+是非成败转头空
+
+:: header ::
+内容居中示例
+
+---
+layout: two-cols
+---
+
+:: left ::
+
+左列内容：滚滚长江东逝水
+
+可以使用 Markdown 语法：
+- 浪花淘尽英雄
+- 是非成败转头空
+
+1. 青山依旧在
+2. 几度夕阳红
+
+:: right ::
+
+右列内容：可以放置图片、代码或其他内容。
+
+```python
+print("白发渔樵江渚上")
+```
+
+![WHULUG](./WHULUG.png)
+
+| 惯看秋月春风 | 一壶浊酒喜相逢 |
+| --- | --- |
+| 古今多少事 | 都付笑谈中 |
+
+:: header ::
+两列布局示例
 
 ---
 layout: cover
+background: logo2.png
 ---
 
 # 感谢观看 ！
